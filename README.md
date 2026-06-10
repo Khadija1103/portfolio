@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -224,3 +225,7 @@
 
 </body>
 </html>
+=======
+# portfolio
+portfolio Tatiana Marrugo
+>>>>>>> 9f337f1039ee78fcd4c1fc239d315ae8be404b95
