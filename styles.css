@@ -1,0 +1,227 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    background:#081b33;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo img{
+    width:60px;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+#btnMenu{
+    display:none;
+}
+
+.hero{
+    min-height:100vh;
+    background:url("assets/img/banner.png");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,.70);
+}
+
+.hero-content{
+    position:relative;
+    text-align:center;
+    max-width:900px;
+    padding:20px;
+}
+
+.foto{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.hero h1{
+    margin-top:20px;
+    font-size:3rem;
+    color:#081b33;
+}
+
+.hero h2{
+    color:#0f4c81;
+    margin:15px 0;
+}
+
+.hero p{
+    font-size:1.1rem;
+}
+
+.botones{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#0f4c81;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:8px;
+    margin:5px;
+}
+
+.btn-secundario{
+    background:#d4a017;
+}
+
+section{
+    padding:90px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#081b33;
+}
+
+.contenido{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.proyectos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#081b33;
+    margin-bottom:15px;
+}
+
+.tecnologias{
+    margin-top:15px;
+    font-weight:600;
+    color:#0f4c81;
+}
+
+.cv-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.cv-box{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skills span{
+    background:#0f4c81;
+    color:white;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+#contacto{
+    text-align:center;
+}
+
+#contacto a{
+    color:#0f4c81;
+    text-decoration:none;
+}
+
+footer{
+    background:#081b33;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    nav ul{
+        display:none;
+    }
+
+    #btnMenu{
+        display:block;
+        background:none;
+        border:none;
+        color:white;
+        font-size:30px;
+        cursor:pointer;
+    }
+
+    .cv-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .foto{
+        width:180px;
+        height:180px;
+    }
+}
