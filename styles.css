@@ -516,6 +516,310 @@ section:not(.hero) {
 }
 
 /*==========================
+    EXPERIENCIA - GAME ROAD
+==========================*/
+
+#experiencia{
+    padding:100px 8%;
+    position:relative;
+}
+
+.career-road{
+    position:relative;
+    max-width:1100px;
+    margin:auto;
+    padding:50px 0;
+}
+
+/* CAMINO */
+
+.road-line{
+    position:absolute;
+    left:50%;
+    top:0;
+    width:12px;
+    height:100%;
+    transform:translateX(-50%);
+    border-radius:50px;
+    background:
+        linear-gradient(
+            to bottom,
+            #8B5CF6,
+            #C084FC,
+            #EC4899
+        );
+    box-shadow:0 0 30px #8B5CF6;
+}
+
+/* Avatar */
+
+.road-cart{
+    position: sticky;
+    top: 90px;
+    left: calc(50% - 45px);
+
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 20;
+
+    animation: cartMove 2s infinite alternate ease-in-out;
+}
+
+.road-cart img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    filter: drop-shadow(0 0 15px #d946ef);
+}
+
+@keyframes cartMove{
+
+    from{
+        transform: translateX(-8px);
+    }
+
+    to{
+        transform: translateX(8px);
+    }
+
+}
+
+@keyframes cartMove{
+
+    from{
+        transform:translateX(-8px);
+    }
+
+    to{
+        transform:translateX(8px);
+    }
+
+}
+
+/* ESTACIONES */
+
+.road-stop{
+    position:relative;
+    display:flex;
+    align-items:center;
+    margin:90px 0;
+}
+
+.road-stop.left{
+    justify-content:flex-start;
+}
+
+.road-stop.right{
+    justify-content:flex-end;
+}
+
+/* TARJETAS */
+
+.experience-card{
+
+    width:420px;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:25px;
+
+    padding:28px;
+
+    transition:.4s;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-8px) scale(1.03);
+
+    box-shadow:0 20px 40px rgba(139,92,246,.35);
+
+}
+
+.experience-card h3{
+
+    color:#C084FC;
+
+    margin-bottom:10px;
+
+}
+
+.experience-card h4{
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+.date{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    color:#9CA3AF;
+
+    font-weight:600;
+
+}
+
+/* NODOS */
+
+.checkpoint{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:30px;
+
+    height:30px;
+
+    border-radius:50%;
+
+    background:#8B5CF6;
+
+    border:6px solid white;
+
+    box-shadow:0 0 25px #8B5CF6;
+
+    z-index:10;
+
+}
+
+.finish{
+
+    background:#22C55E;
+
+    box-shadow:0 0 25px #22C55E;
+
+}
+
+/* CURVAS */
+
+.road-stop.left::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:49%;
+
+    width:120px;
+
+    height:8px;
+
+    border-radius:20px;
+
+    background:#C084FC;
+
+}
+
+.road-stop.right::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:49%;
+
+    width:120px;
+
+    height:8px;
+
+    border-radius:20px;
+
+    background:#C084FC;
+
+}
+
+/* TARJETA FINAL */
+
+.next-level{
+
+    border:2px solid #22C55E;
+
+    box-shadow:0 0 35px rgba(34,197,94,.35);
+
+}
+
+.next-level h3{
+
+    color:#22C55E;
+
+}
+
+.next-level ul{
+
+    margin-top:15px;
+
+    padding-left:18px;
+
+}
+
+.next-level li{
+
+    margin:8px 0;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .road-line{
+
+        left:25px;
+
+    }
+
+    .checkpoint{
+
+        left:25px;
+
+    }
+
+    .road-stop{
+
+        justify-content:flex-end !important;
+
+        padding-left:70px;
+
+    }
+
+    .road-stop::after{
+
+        display:none;
+
+    }
+
+    .experience-card{
+
+        width:100%;
+
+    }
+
+}
+
+
+
+/*==========================
   CONTACTO
 ==========================*/
 .contact-grid {
