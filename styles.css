@@ -556,7 +556,8 @@ section:not(.hero) {
 .road-cart{
     position: sticky;
     top: 90px;
-    left: calc(50% - 45px);
+ left:50%;
+transform:translateX(-50%);
 
     width: 90px;
     height: 90px;
@@ -578,26 +579,19 @@ section:not(.hero) {
     filter: drop-shadow(0 0 15px #d946ef);
 }
 
-@keyframes cartMove{
-
-    from{
-        transform: translateX(-8px);
-    }
-
-    to{
-        transform: translateX(8px);
-    }
-
-}
 
 @keyframes cartMove{
 
     from{
-        transform:translateX(-8px);
+
+        transform:translateX(-50%) translateY(-4px);
+
     }
 
     to{
-        transform:translateX(8px);
+
+        transform:translateX(-50%) translateY(4px);
+
     }
 
 }
@@ -714,39 +708,27 @@ section:not(.hero) {
 /* CURVAS */
 
 .road-stop.left::after{
-
     content:"";
-
     position:absolute;
-
-    right:49%;
-
-    width:120px;
-
+    top:50%;
+    right:calc(50% - 6px);
+    transform:translateY(-50%);
+    width:60px;
     height:8px;
-
     border-radius:20px;
-
     background:#C084FC;
-
 }
 
 .road-stop.right::after{
-
     content:"";
-
     position:absolute;
-
-    left:49%;
-
-    width:120px;
-
+    top:50%;
+    left:calc(50% - 6px);
+    transform:translateY(-50%);
+    width:60px;
     height:8px;
-
     border-radius:20px;
-
     background:#C084FC;
-
 }
 
 /* TARJETA FINAL */
@@ -778,45 +760,6 @@ section:not(.hero) {
     margin:8px 0;
 
 }
-
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-    .road-line{
-
-        left:25px;
-
-    }
-
-    .checkpoint{
-
-        left:25px;
-
-    }
-
-    .road-stop{
-
-        justify-content:flex-end !important;
-
-        padding-left:70px;
-
-    }
-
-    .road-stop::after{
-
-        display:none;
-
-    }
-
-    .experience-card{
-
-        width:100%;
-
-    }
-
-}
-
 
 
 /*==========================
@@ -957,76 +900,226 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        background: rgba(10, 10, 25, .95);
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        padding: 20px 0;
-        gap: 15px;
-        text-align: center;
+
+/*=========================================
+  TABLETS
+=========================================*/
+@media (max-width:992px){
+
+    .career-road{
+        max-width:100%;
+        padding:30px 0;
     }
-    .menu.active {
-        display: flex;
+
+    /* Línea a la izquierda */
+    .road-line{
+        left:55px;
+        transform:none;
     }
-    .menu-icon {
-        display: block;
+
+    /* Avatar */
+    .road-cart{
+        left:55px;
+        transform:translateX(-50%);
+        width:80px;
+        height:80px;
     }
-    .hero {
-        height: 100vh;
-        max-height: 100vh;
-        overflow: hidden;
-        gap: 20px;
-        padding: 10px 5%;
+
+    /* Círculos */
+    .checkpoint{
+        left:55px;
+        transform:translate(-50%, -50%);
     }
-    .hero-right h1 {
-        font-size: 32px;
-        line-height: 38px;
+
+    /* Todas las tarjetas a la derecha */
+ @media (max-width:992px){
+
+    .road-stop.left::after,
+    .road-stop.right::after{
+        display:none !important;
     }
-    .hero-right h2 {
-        font-size: 18px;
+
+}
+
+    /* Elimina las barras horizontales */
+    .road-stop::after{
+        display:none;
     }
-    .hero-right p {
-        font-size: 14px;
-        line-height: 24px;
-        margin-bottom: 15px;
+
+    .experience-card{
+        width:calc(100% - 120px);
+        max-width:none;
     }
-    .hero-buttons {
-        gap: 10px;
-        margin-bottom: 20px;
+
+    .road-stop.left::after,
+.road-stop.right::after{
+    display:none !important;
+}
+
+}
+/*=========================================
+  CELULARES
+=========================================*/
+@media (max-width:768px){
+
+    .road-line{
+
+        left:35px;
+
     }
-    .btn-primary,
-    .btn-secondary {
-        padding: 10px 20px;
-        font-size: 14px;
+
+    .road-cart{
+    left:35px;
+    transform:translateX(-50%);
+
+    width:70px;
+    height:70px;
+}
+
+    .checkpoint{
+
+        left:35px;
+
+        width:22px;
+        height:22px;
+
     }
-    .photo-border {
-        width: 180px;
-        height: 180px;
+
+    .road-stop{
+
+        justify-content:flex-start !important;
+
+        padding-left:100px;
+
+        margin:55px 0;
+
     }
-    .card-stat {
-        width: 90px;
-        padding: 12px;
+
+    .road-stop::after{
+
+        display:none;
+
     }
-    .card-stat h3 {
-        font-size: 22px;
+
+    .experience-card{
+        width:calc(100vw - 130px);
+        max-width:520px;
     }
-    .card-stat span {
-        font-size: 12px;
+    .experience-card h3{
+
+        font-size:20px;
+
     }
-    .section-title h2 {
-        font-size: 28px;
+
+    .experience-card h4{
+
+        font-size:16px;
+
     }
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+
+    .date{
+
+        font-size:14px;
+
     }
-    .tag {
-        font-size: 12px;
-        padding: 6px 14px;
-        margin-bottom: 10px;
+
+}
+
+
+/*=========================================
+  EXPERIENCIA RESPONSIVE
+=========================================*/
+
+@media (max-width: 992px){
+
+    .career-road{
+        width:100%;
+        padding:30px 0;
     }
+
+    .experience-card{
+        width:330px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    #experiencia{
+
+        padding:70px 0;
+
+    }
+
+    .road-line{
+
+        left:22px;
+
+    }
+
+    .road-cart{
+
+        left:22px;
+
+        width:55px;
+
+        height:55px;
+
+        margin-left:-23px;
+
+    }
+
+    .checkpoint{
+
+        left:22px;
+
+        width:18px;
+
+        height:18px;
+
+    }
+
+    .road-stop{
+
+        padding-left:80px;
+
+        margin:35px 0;
+
+    }
+
+    .experience-card{
+        width:calc(100vw - 100px);
+
+        padding:18px;
+
+        border-radius:18px;
+
+    }
+
+    .experience-card h3{
+
+        font-size:17px;
+
+    }
+
+    .experience-card h4{
+
+        font-size:14px;
+
+    }
+
+    .date{
+
+        font-size:13px;
+
+    }
+
+    .experience-card p{
+
+        font-size:13px;
+
+        line-height:22px;
+
+    }
+
 }
