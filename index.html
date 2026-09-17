@@ -1,433 +1,1648 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Tatiana Marrugo Jiménez | Portafolio</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <!-- CSS propio -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
     <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-    <!-- ================ HEADER (oculto al inicio) ================ -->
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
     <header class="hidden-nav">
+
         <nav class="navbar">
+
             <div class="logo">
-                <img src="assets/img/logoTMJ.png" alt="TMJ" />
+                <img src="assets/img/logoTMJ.png"
+                    alt="Logo Tatiana Marrugo Jiménez" />
             </div>
+
             <ul class="menu" id="menu">
+
                 <li><a href="#inicio" id="linkInicio">Inicio</a></li>
+
                 <li><a href="#sobre">Sobre mí</a></li>
+
                 <li><a href="#habilidades">Habilidades</a></li>
+
                 <li><a href="#proyectos">Proyectos</a></li>
+
                 <li><a href="#educacion">Educación</a></li>
-                  <li><a href="#experiencia">Experiencia</a></li>
+
+                <li><a href="#experiencia">Experiencia</a></li>
+
                 <li><a href="#contacto">Contacto</a></li>
+
             </ul>
+
             <div class="menu-icon" id="menuIcon">
                 <i class="fa-solid fa-bars"></i>
             </div>
+
         </nav>
+
     </header>
 
-    <!-- ================ HERO (portada inicial) ================ -->
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
     <section class="hero" id="inicio">
+
         <div class="hero-left">
+
             <div class="photo-border">
-                <img src="assets/img/perfil.png" alt="Tatiana" />
+
+                <img src="assets/img/perfil.png"
+                    alt="Tatiana Marrugo Jiménez" />
+
             </div>
+
         </div>
+
+
         <div class="hero-right">
-            <span class="tag">Ingeniería • Desarrollo • Analítica • Gestión</span>
-            <h1>TATIANA <br /> MARRUGO <br /> JIMÉNEZ</h1>
-            <h2>Ingeniería, tecnología y análisis para generar soluciones de alto impacto.</h2>
+
+            <span class="tag">
+                Ingeniería • Datos • Desarrollo • Gestión
+            </span>
+
+            <h1>
+                TATIANA
+                <br />
+                MARRUGO
+                <br />
+                JIMÉNEZ
+            </h1>
+
+            <h2>
+                Ingeniería, tecnología y análisis para generar
+                soluciones de alto impacto.
+            </h2>
+
             <p>
-                Profesional con experiencia en desarrollo de software, análisis de datos, mejora continua y gestión de proyectos.
-                Mi objetivo es crear soluciones tecnológicas que optimicen procesos y fortalezcan la toma de decisiones mediante
-                herramientas digitales e inteligencia de negocios.
+                Ingeniera Industrial y Tecnóloga en Análisis y Desarrollo
+                de Software, con experiencia en operaciones, análisis de
+                información, desarrollo de soluciones digitales, mejora
+                continua y gestión de proyectos.
             </p>
+
             <div class="hero-buttons">
-                <a href="#" id="btnVerMas" class="btn-primary">Ver más</a>
-                <a href="cv/CV-Tatiana-Marrugo.pdf" download class="btn-secondary">Descargar CV</a> 
+
+                <a href="#sobre"
+                    id="btnVerMas"
+                    class="btn-primary">
+                    Ver más
+                </a>
+
+                <a href="cv/CV-Tatiana-Marrugo.pdf"
+                    download
+                    class="btn-secondary">
+                    Descargar CV
+                </a>
+
             </div>
+
+
             <div class="hero-stats">
+
                 <div class="card-stat">
                     <h3>20+</h3>
                     <span>Repositorios</span>
                 </div>
+
                 <div class="card-stat">
                     <h3>15+</h3>
                     <span>Proyectos</span>
                 </div>
+
                 <div class="card-stat">
-                    <h3>5+</h3>
+                    <h3>7+</h3>
                     <span>Años de experiencia</span>
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- ================ RESTO DE SECCIONES (ocultas al inicio) ================ -->
+
+    <!-- =====================================================
+         CONTENIDO COMPLETO
+    ====================================================== -->
+
     <div id="contenido-completo" class="hidden">
 
-        <!-- SOBRE MÍ -->
+
+        <!-- =================================================
+             SOBRE MÍ
+        ================================================== -->
+
         <section id="sobre">
+
             <div class="section-title">
+
                 <span>Acerca de mí</span>
+
                 <h2>Mi Perfil Profesional</h2>
+
             </div>
+
+
             <div class="about-container">
+
                 <div class="about-text">
-                    <h3>Ingeniería Industrial & Desarrollo de Software</h3>
+
+                    <h3>
+                        Ingeniería Industrial & Desarrollo de Software
+                    </h3>
+
                     <p>
-                        Soy Ingeniera Industrial y Tecnóloga ADSO con experiencia en desarrollo web, análisis de datos,
-                        automatización de procesos y herramientas de inteligencia de negocios.
+                        Soy Ingeniera Industrial y Tecnóloga en Análisis
+                        y Desarrollo de Software, con formación complementaria
+                        en gestión de proyectos, análisis de datos y
+                        herramientas tecnológicas.
                     </p>
+
                     <p>
-                        Disfruto construir soluciones digitales que mejoren la productividad, automaticen tareas y aporten valor mediante la tecnología.
+                        Mi experiencia integra la gestión de operaciones,
+                        administración de procesos, análisis de información,
+                        elaboración de reportes, seguimiento de indicadores,
+                        mejora continua y desarrollo de soluciones digitales.
                     </p>
-                    <a href="cv/CV-Tatiana-Marrugo.pdf" download class="btn-secondary">Descargar CV</a>
+
+                    <p>
+                        Trabajo en la intersección entre los procesos de
+                        negocio y la tecnología, utilizando herramientas como
+                        Power BI, Excel, SQL y tecnologías de desarrollo para
+                        transformar información en soluciones útiles para
+                        la toma de decisiones.
+                    </p>
+
+                    <p>
+                        También cuento con experiencia en desarrollo web,
+                        APIs, bases de datos, automatización y construcción
+                        de soluciones Full Stack, lo que me permite comprender
+                        tanto las necesidades del negocio como su
+                        implementación tecnológica.
+                    </p>
+
+                    <a href="cv/CV-Tatiana-Marrugo.pdf"
+                        download
+                        class="btn-secondary">
+                        Descargar CV
+                    </a>
+
                 </div>
+
+
                 <div class="about-image">
+
                     <div class="circle-image">
-                        <img src="assets/img/perfil.png" alt="Tatiana" />
+
+                        <img src="assets/img/perfil.png"
+                            alt="Tatiana Marrugo Jiménez" />
+
                     </div>
+
                 </div>
+
             </div>
+
         </section>
 
-        <!-- HABILIDADES -->
-        <section id="habilidades">
-            <div class="section-title">
-                <span>Competencias</span>
-                <h2>Habilidades Técnicas</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fa-brands fa-java" style="font-size:50px; color:#f89820;"></i>
-                    <h3>Java</h3>
-                    <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
-                    <span>85%</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-leaf" style="font-size:50px; color:#6db33f;"></i>
-                    <h3>Spring Boot</h3>
-                    <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
-                    <span>80%</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-database" style="font-size:50px; color:#00758f;"></i>
-                    <h3>SQL</h3>
-                    <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
-                    <span>90%</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-chart-pie" style="font-size:50px; color:#f2c811;"></i>
-                    <h3>Power BI</h3>
-                    <div class="progress"><div class="progress-bar" style="width:95%"></div></div>
-                    <span>95%</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-html5" style="font-size:50px; color:#e34f26;"></i>
-                    <h3>HTML5</h3>
-                    <div class="progress"><div class="progress-bar" style="width:95%"></div></div>
-                    <span>95%</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-css3-alt" style="font-size:50px; color:#1572b6;"></i>
-                    <h3>CSS3</h3>
-                    <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
-                    <span>90%</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-js" style="font-size:50px; color:#f7df1e;"></i>
-                    <h3>JavaScript</h3>
-                    <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
-                    <span>85%</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-github" style="font-size:50px; color:#fff;"></i>
-                    <h3>GitHub</h3>
-                    <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
-                    <span>90%</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-regular fa-comment-dots" style="font-size:50px; color:#10a37f;"></i>
-                    <h3>ChatGPT</h3>
-                    <div class="progress"><div class="progress-bar" style="width:95%"></div></div>
-                    <span>95%</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-brain" style="font-size:50px; color:#a855f7;"></i>
-                    <h3>IA Generativa</h3>
-                    <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
-                    <span>90%</span>
-                </div>
-            </div>
-        </section>
 
-        <!-- PROYECTOS -->
-<section id="proyectos">
-    <div class="section-title">
-        <span>Portafolio</span>
-        <h2>Proyectos Destacados</h2>
-    </div>
-    <div class="projects-grid">
-        <!-- Proyecto 1: One Click Service -->
-        <div class="project-card">
-            <div class="project-image">
-                <img src="assets/img/project1.jpg" alt="One Click Service" />
-            </div>
-            <div class="project-content">
-                <h3>One Click Service</h3>
-                <p>Plataforma web para contratación de servicios, gestión de perfiles, administración de usuarios y autenticación.</p>
-                <div class="tech">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <a href="https://github.com/Khadija1103/proyecto_oneclickservise.git" target="_blank" rel="noopener noreferrer" class="btn-primary">Ver proyecto</a>
-            </div>
-        </div>
-
-        <!-- Proyecto 2: NASA APOD -->
-        <div class="project-card">
-            <div class="project-image">
-                <img src="assets/img/project2.jpg" alt="NASA APOD" />
-            </div>
-            <div class="project-content">
-                <h3>NASA APOD</h3>
-                <p>Aplicación que consume la API oficial de la NASA para mostrar la imagen astronómica del día.</p>
-                <div class="tech">
-                    <span>JavaScript</span>
-                    <span>REST API</span>
-                </div>
-                <a href="https://github.com/Khadija1103/nasa-apod-app.git" target="_blank" rel="noopener noreferrer" class="btn-primary">Ver proyecto</a>
-            </div>
-        </div>
-
-        <!-- Proyecto 3: Dashboard Power BI -->
-        <div class="project-card">
-            <div class="project-image">
-                <img src="assets/img/project3.jpg" alt="Dashboard Power BI" />
-            </div>
-            <div class="project-content">
-                <h3>Dashboard Power BI</h3>
-                <p>Dashboard interactivo para análisis de indicadores, ventas y toma de decisiones empresariales.</p>
-                <div class="tech">
-                    <span>Power BI</span>
-                    <span>SQL</span>
-                    <span>Excel</span>
-                </div>
-                <a href="https://drive.google.com/file/d/1mi6AUpphzAUZD4f8nEFeu34ka8K9eTTP/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-primary">Ver proyecto</a>
-            </div>
-        </div>
-    </div>
-</section>
-        <!-- EDUCACIÓN -->
-        <section id="educacion">
-            <div class="section-title">
-                <span>Formación</span>
-                <h2>Educación</h2>
-            </div>
-            <div class="timeline">
-                  <div class="circle"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-item">
-                    <div class="circle"></div>
-                    <div class="timeline-content">
-                        <h3>Especialización en Gestión de Proyectos TI</h3>
-                        <p>Universidad Nacional Abierta y a Distancia – UNAD, Bogotá, Colombia</p>
-                        <p>2025 – En curso</p>
-                    </div>
-                </div>     
-                <div class="timeline-item">
-                    <div class="circle"></div>
-                    <div class="timeline-content">
-                        <h3>Ingeniería Industrial</h3>
-                        <p>Universidad Nacional Abierta y a Distancia – UNAD, Bogotá, Colombia</p>
-                        <p>2023 – 2025</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="circle"></div>
-                    <div class="timeline-content">
-                        <h3>Tecnología en Análisis y Desarrollo de Software</h3>
-                        <p>SENA, Bogotá, Colombia</p>
-                          <p>2023 – 2025</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="circle"></div>
-                    <div class="timeline-content">
-                        <h3>Microsoft Power BI Data Analyst</h3>
-                        <p>Microsoft</p>
-                        <p>2025</p>
-                    </div>
-                </div>
-                        <div class="timeline-item">
-                    <div class="circle"></div>
-                    <div class="timeline-content">
-                        <h3>Desarrolladora Jr. Full Stack Java</h3>
-                        <p>Generation Colombia  , Bogotá, Colombia </p>
-                        <p>2025</p>
-                    </div>
-                </div>  
-            </div>
-        </section>
-
-        <!--==========================
-    EXPERIENCIA LABORAL
+       <!--==========================
+    HABILIDADES
 ===========================-->
 
-<section id="experiencia">
+<section id="habilidades" class="skills-section">
+
     <div class="section-title">
-        <span>Trayectoria Profesional</span>
-        <h2>Mi Camino Profesional</h2>
+        <span>Mi ecosistema tecnológico</span>
+        <h2>Habilidades <span>Técnicas</span></h2>
+        <p>
+            Un perfil que integra ingeniería, análisis de datos,
+            desarrollo de software, inteligencia artificial y gestión.
+        </p>
     </div>
+
+    <div class="skills-orbit">
+
+        <!--==========================
+            CONEXIONES
+        ==========================-->
+
+        <div class="orbit-connections">
+
+            <span class="connection connection-1"></span>
+            <span class="connection connection-2"></span>
+            <span class="connection connection-3"></span>
+            <span class="connection connection-4"></span>
+            <span class="connection connection-5"></span>
+            <span class="connection connection-6"></span>
+
+        </div>
+
+
+        <!--==========================
+            CENTRO - PERFIL
+        ==========================-->
+
+        <div class="profile-orbit">
+
+            <div class="orbit-ring ring-one"></div>
+            <div class="orbit-ring ring-two"></div>
+
+            <div class="profile-core">
+
+                <div class="profile-photo">
+
+                    <img
+                        src="assets/img/perfil.png"
+                        alt="Tatiana Marrugo Jiménez"
+                    >
+
+                </div>
+
+                <div class="profile-info">
+
+                    <strong>Tatiana</strong>
+
+                    <span>
+                        Ingeniería<br>
+                        Datos · Tecnología
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--==========================
+            NODO DATOS
+        ==========================-->
+
+        <article class="technology-node node-data">
+
+            <div class="node-heading">
+
+                <div class="node-main-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+
+                <div>
+                    <span class="node-number">01</span>
+                    <h3>Datos & BI</h3>
+                </div>
+
+            </div>
+
+            <div class="technology-list">
+
+                <div class="technology">
+                    <i class="fas fa-chart-column"></i>
+                    <span>Power BI</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-file-excel"></i>
+                    <span>Excel</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-filter"></i>
+                    <span>Power Query</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Dashboards</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-gauge-high"></i>
+                    <span>KPIs</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!--==========================
+            NODO DESARROLLO
+        ==========================-->
+
+        <article class="technology-node node-development">
+
+            <div class="node-heading">
+
+                <div class="node-main-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <div>
+                    <span class="node-number">02</span>
+                    <h3>Desarrollo</h3>
+                </div>
+
+            </div>
+
+            <div class="technology-list">
+
+                <div class="technology">
+                    <i class="devicon-java-plain"></i>
+                    <span>Java</span>
+                </div>
+
+                <div class="technology">
+                    <i class="devicon-spring-original"></i>
+                    <span>Spring Boot</span>
+                </div>
+
+                <div class="technology">
+                    <i class="devicon-javascript-plain"></i>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="technology">
+                    <i class="devicon-html5-plain"></i>
+                    <span>HTML5</span>
+                </div>
+
+                <div class="technology">
+                    <i class="devicon-css3-plain"></i>
+                    <span>CSS3</span>
+                </div>
+
+                <div class="technology">
+                    <i class="devicon-react-original"></i>
+                    <span>React</span>
+                </div>
+
+                <div class="technology">
+                    <i class="devicon-python-plain"></i>
+                    <span>Python</span>
+                </div>
+
+                <div class="technology">
+                    <i class="devicon-go-original"></i>
+                    <span>Go</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!--==========================
+            NODO BASES DE DATOS
+        ==========================-->
+
+        <article class="technology-node node-database">
+
+            <div class="node-heading">
+
+                <div class="node-main-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+
+                <div>
+                    <span class="node-number">03</span>
+                    <h3>Datos & Backend</h3>
+                </div>
+
+            </div>
+
+            <div class="technology-list">
+
+                <div class="technology">
+                    <i class="devicon-mysql-original"></i>
+                    <span>MySQL</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                </div>
+
+                <div class="technology">
+                    <i class="devicon-firebase-plain"></i>
+                    <span>Firebase</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-plug"></i>
+                    <span>APIs REST</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-server"></i>
+                    <span>Backend</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!--==========================
+            NODO IA
+        ==========================-->
+
+        <article class="technology-node node-ai">
+
+            <div class="node-heading">
+
+                <div class="node-main-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+
+                <div>
+                    <span class="node-number">04</span>
+                    <h3>IA & Automatización</h3>
+                </div>
+
+            </div>
+
+            <div class="technology-list">
+
+                <div class="technology">
+                    <i class="fas fa-robot"></i>
+                    <span>ChatGPT</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-brain"></i>
+                    <span>IA Generativa</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-gears"></i>
+                    <span>Automatización</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                    <span>Prompt Engineering</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!--==========================
+            NODO CLOUD
+        ==========================-->
+
+        <article class="technology-node node-cloud">
+
+            <div class="node-heading">
+
+                <div class="node-main-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+
+                <div>
+                    <span class="node-number">05</span>
+                    <h3>Cloud & DevOps</h3>
+                </div>
+
+            </div>
+
+            <div class="technology-list">
+
+                <div class="technology">
+                    <i class="devicon-azure-plain"></i>
+                    <span>Azure</span>
+                </div>
+
+                <div class="technology">
+                    <i class="devicon-docker-plain"></i>
+                    <span>Docker</span>
+                </div>
+
+                <div class="technology">
+                    <i class="devicon-git-plain"></i>
+                    <span>Git</span>
+                </div>
+
+                <div class="technology">
+                    <i class="devicon-github-original"></i>
+                    <span>GitHub</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-code-branch"></i>
+                    <span>Git Flow</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!--==========================
+            NODO ARQUITECTURA
+        ==========================-->
+
+        <article class="technology-node node-architecture">
+
+            <div class="node-heading">
+
+                <div class="node-main-icon">
+                    <i class="fas fa-diagram-project"></i>
+                </div>
+
+                <div>
+                    <span class="node-number">06</span>
+                    <h3>Arquitectura & Gestión</h3>
+                </div>
+
+            </div>
+
+            <div class="technology-list">
+
+                <div class="technology">
+                    <i class="fas fa-cubes"></i>
+                    <span>POO</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>SOLID</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-sitemap"></i>
+                    <span>DDD</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-users"></i>
+                    <span>Scrum</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-arrows-rotate"></i>
+                    <span>Agile</span>
+                </div>
+
+                <div class="technology">
+                    <i class="fas fa-diagram-project"></i>
+                    <span>Gestión de proyectos</span>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+        <!-- =================================================
+             PROYECTOS
+        ================================================== -->
+
+        <section id="proyectos">
+
+            <div class="section-title">
+
+                <span>Portafolio</span>
+
+                <h2>Proyectos Destacados</h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- =================================================
+                     PROYECTO 1 - ONE CLICK SERVICE
+                ================================================== -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/img/project1.jpg"
+                            alt="One Click Service" />
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            One Click Service
+                        </h3>
+
+                        <p>
+                            Plataforma web para la gestión y contratación
+                            de servicios, con administración de usuarios,
+                            perfiles, autenticación, productos y servicios.
+                        </p>
+
+                        <div class="tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+
+                        </div>
+
+                        <a href="https://github.com/Khadija1103/proyecto_oneclickservise.git"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-primary">
+
+                            Ver proyecto
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PROYECTO 2 - NASA
+                ================================================== -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/img/project2.jpg"
+                            alt="NASA APOD" />
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            NASA APOD
+                        </h3>
+
+                        <p>
+                            Aplicación web que consume la API oficial
+                            de la NASA para consultar y mostrar la
+                            imagen astronómica del día.
+                        </p>
+
+                        <div class="tech">
+
+                            <span>JavaScript</span>
+                            <span>REST API</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+
+                        </div>
+
+                        <a href="https://github.com/Khadija1103/nasa-apod-app.git"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-primary">
+
+                            Ver proyecto
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PROYECTO 3 - POWER BI
+                ================================================== -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/img/project3.jpg"
+                            alt="Dashboard Power BI" />
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            Dashboard Power BI
+                        </h3>
+
+                        <p>
+                            Dashboard interactivo orientado al análisis
+                            de indicadores, información comercial y
+                            apoyo a la toma de decisiones.
+                        </p>
+
+                        <div class="tech">
+
+                            <span>Power BI</span>
+                            <span>SQL</span>
+                            <span>Excel</span>
+                            <span>Power Query</span>
+
+                        </div>
+
+                        <a href="https://drive.google.com/file/d/1mi6AUpphzAUZD4f8nEFeu34ka8K9eTTP/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-primary">
+
+                            Ver proyecto
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PROYECTO 4 - PORTAFOLIO FREDY
+                ================================================== -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/img/fredy.png"
+                            alt="Portafolio profesional Fredy Ramírez" />
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            Portafolio – Fredy Ramírez
+                        </h3>
+
+                        <p>
+                            Diseño y desarrollo de un portafolio web
+                            profesional personalizado, orientado a
+                            presentar perfil, experiencia, habilidades
+                            y proyectos.
+                        </p>
+
+                        <div class="tech">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+
+                        </div>
+
+                        <a href="https://khadija1103.github.io/portfolio-Fredy-Ramirez-/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-primary">
+
+                            Ver portafolio
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PROYECTO 5 - HÉCTOR
+                ================================================== -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/img/FOTO.png"
+                            alt="Portafolio profesional Héctor Marrugo Pájaro" />
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            Portafolio – Ing. Héctor Marrugo Pájaro
+                        </h3>
+
+                        <p>
+                            Diseño y desarrollo de sitio web profesional
+                            para presentar trayectoria, formación,
+                            experiencia y perfil profesional.
+                        </p>
+
+                        <div class="tech">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+
+                        </div>
+
+                        <a href="https://khadija1103.github.io/Portafolio-Ing.-H-ctor-Marrugo-Pajaro-/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-primary">
+
+                            Ver portafolio
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PROYECTO 6 - JULIETH
+                ================================================== -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/img/foto2.jpg"
+                            alt="Portafolio profesional Julieth Angélica Pedraza García" />
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            Portafolio – Julieth Angélica Pedraza
+                        </h3>
+
+                        <p>
+                            Diseño y desarrollo de un portafolio web
+                            profesional personalizado para presentar
+                            información académica, experiencia y
+                            trayectoria.
+                        </p>
+
+                        <div class="tech">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+
+                        </div>
+
+                        <a href="https://khadija1103.github.io/portfolio-Julieth-Angelica-Pedraza-Garc-a/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-primary">
+
+                            Ver portafolio
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PROYECTO 7 - EL EMPLEADO AUMENTADO
+                ================================================== -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/img/curso1.png"
+                            alt="Curso El Empleado Aumentado" />
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            El Empleado Aumentado
+                        </h3>
+
+                        <p>
+                            Curso web sobre inteligencia artificial,
+                            datos y automatización aplicado a situaciones
+                            reales de trabajo para mejorar procesos,
+                            productividad y toma de decisiones.
+                        </p>
+
+                        <div class="tech">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>IA</span>
+                            <span>Datos</span>
+                            <span>Automatización</span>
+
+                        </div>
+
+                        <a href="https://khadija1103.github.io/El-Empleado-Aumentado/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-primary">
+
+                            Ver curso
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PROYECTO 8 - CORPORACIÓN BARAKA
+                ================================================== -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/img/logo_baraka.png"
+                            alt="Sitio web Corporación Baraka" />
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            Sitio Web Corporación Baraka
+                        </h3>
+
+                        <p>
+                            Diseño y desarrollo del sitio web institucional
+                            de Corporación Baraka, organización sin ánimo
+                            de lucro enfocada en formación, acompañamiento,
+                            emprendimiento y fortalecimiento de capacidades.
+                        </p>
+
+                        <div class="tech">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                            <span>GitHub Pages</span>
+
+                        </div>
+
+                        <a href="https://barakacorporacion2-netizen.github.io/BarakaWebTech/inicio/index.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-primary">
+
+                            Ver sitio
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EDUCACIÓN
+        ================================================== -->
+
+        <section id="educacion">
+
+            <div class="section-title">
+
+                <span>Formación</span>
+
+                <h2>Educación</h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <div class="timeline-item">
+
+                    <div class="circle"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Especialización en Gestión de Proyectos
+                        </h3>
+
+                        <p>
+                            Universidad Nacional Abierta y a Distancia – UNAD
+                        </p>
+
+                        <p>
+                            2025 – En curso
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="circle"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Ingeniería Industrial
+                        </h3>
+
+                        <p>
+                            Universidad Nacional Abierta y a Distancia – UNAD
+                        </p>
+
+                        <p>
+                            2023 – 2025
+                        </p>
+
+                        <p>
+                            Grado de honor
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="circle"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Tecnología en Análisis y Desarrollo de Software
+                        </h3>
+
+                        <p>
+                            SENA
+                        </p>
+
+                        <p>
+                            Formación tecnológica finalizada
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="circle"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Tecnología en Gestión Logística
+                        </h3>
+
+                        <p>
+                            SENA
+                        </p>
+
+                        <p>
+                            2020 – 2022
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="circle"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Microsoft Power BI Data Analyst
+                        </h3>
+
+                        <p>
+                            Microsoft
+                        </p>
+
+                        <p>
+                            2025
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="circle"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Desarrolladora Jr. Full Stack Java
+                        </h3>
+
+                        <p>
+                            Generation Colombia
+                        </p>
+
+                        <p>
+                            2025
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+     <!-- =================================================
+     EXPERIENCIA
+================================================== -->
+
+<section id="experiencia">
+
+    <div class="section-title">
+
+        <span>Trayectoria Profesional</span>
+
+        <h2>Mi Camino Profesional</h2>
+
+    </div>
+
 
     <div class="career-road">
 
-        <!-- Camino -->
         <div class="road-line"></div>
 
-        <!-- Carrito -->
-      <!-- Avatar -->
-<div class="road-cart">
-    <img src="assets/img/emiti.png" alt="Tatiana Avatar">
-</div>
-        <!-- Estación 1 -->
+
+        <div class="road-cart">
+
+            <img src="assets/img/emiti.png"
+                alt="Tatiana Avatar">
+
+        </div>
+
+
+        <!-- =================================================
+             1. EMTELCO - BELCORP
+        ================================================== -->
+
         <div class="road-stop left">
+
             <div class="checkpoint"></div>
 
             <div class="experience-card">
-                <h3>Asistente Gerencia Comercial</h3>
-                <h4>Outsourcing S.A.S. BIC</h4>
+
+                <h3>
+                    Aprendiz UX Research
+                </h3>
+
+                <h4>
+                    Emtelco – Belcorp
+                </h4>
 
                 <span class="date">
-                    Feb. 2025 – Jul. 2025
+                    Ene. 2022 – Jul. 2022
                 </span>
 
                 <p>
-                    Gestioné información comercial y apoyé procesos
-                    contractuales y licitaciones.
+                    Apoyé actividades de investigación de experiencia
+                    de usuario, recopilación y análisis de información
+                    para identificar necesidades y oportunidades de mejora.
                 </p>
+
             </div>
+
         </div>
 
-        <!-- Estación 2 -->
+
+        <!-- =================================================
+             2. CONEXIÓN
+        ================================================== -->
+
         <div class="road-stop right">
+
             <div class="checkpoint"></div>
 
             <div class="experience-card">
-                <h3>Pasante – Subdirección Financiera</h3>
-                <h4>ATENEA</h4>
+
+                <h3>
+                    Coordinadora Nacional de Servicio y Operaciones
+                </h3>
+
+                <h4>
+                    Conexión
+                </h4>
+
+                <span class="date">
+                    Jun. 2023 – Jun. 2024
+                </span>
+
+                <p>
+                    Coordiné operaciones, equipos, servicios, indicadores
+                    y proveedores, realizando seguimiento de compromisos,
+                    procesos y ANS/SLA, con enfoque en control operativo
+                    y mejora continua.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             3. INGENIEROS
+        ================================================== -->
+
+        <div class="road-stop left">
+
+            <div class="checkpoint"></div>
+
+            <div class="experience-card">
+
+                <h3>
+                    Auditor Interno
+                </h3>
+
+                <h4>
+                    Ingenieros Auditor Interno
+                </h4>
+
+                <span class="date">
+                    Jun. 2024 – Ene. 2025
+                </span>
+
+                <p>
+                    Apoyé procesos de auditoría interna, revisión documental,
+                    análisis de información y seguimiento de procesos,
+                    contribuyendo al control y mejora de las operaciones.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             4. OUTSOURCING
+        ================================================== -->
+
+        <div class="road-stop right">
+
+            <div class="checkpoint"></div>
+
+            <div class="experience-card">
+
+                <h3>
+                    Asistente de Gerencia Comercial
+                </h3>
+
+                <h4>
+                    Outsourcing S.A.S. BIC
+                </h4>
+
+                <span class="date">
+                    Feb. 2025 – May. 2025
+                </span>
+
+                <p>
+                    Gestioné información comercial y administrativa,
+                    apoyé procesos de contratación y licitación y realicé
+                    seguimiento documental utilizando herramientas digitales,
+                    bases de datos y herramientas de análisis.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             5. ATENEA
+        ================================================== -->
+
+        <div class="road-stop left">
+
+            <div class="checkpoint"></div>
+
+            <div class="experience-card">
+
+                <h3>
+                    Pasante – Subdirección Financiera
+                </h3>
+
+                <h4>
+                    ATENEA
+                </h4>
 
                 <span class="date">
                     Ago. 2025 – Dic. 2025
                 </span>
 
                 <p>
-                    Actualicé indicadores y realicé seguimiento a procesos
-                    financieros.
+                    Apoyé procesos de análisis y seguimiento de información
+                    financiera, consolidación de datos, actualización de
+                    indicadores y elaboración de reportes para apoyar los
+                    procesos de control y gestión.
                 </p>
+
             </div>
+
         </div>
 
-        <!-- Estación 3 -->
-        <div class="road-stop left">
+
+        <!-- =================================================
+             6. CORPORACIÓN BARAKA
+        ================================================== -->
+
+        <div class="road-stop right">
+
             <div class="checkpoint"></div>
 
             <div class="experience-card">
-                <h3>Analista de Honorarios y Control Administrativo</h3>
-                <h4>Pagasalud S.A.S.</h4>
+
+                <h3>
+                    Docente / Instructora de Emprendimiento
+                </h3>
+
+                <h4>
+                    Corporación Baraka
+                </h4>
+
+                <span class="date">
+                    Jun. 2023 – Actualidad
+                </span>
+
+                <p>
+                    Desarrollo procesos de formación y acompañamiento
+                    en emprendimiento, liderazgo y administración,
+                    fortaleciendo las capacidades de mujeres emprendedoras.
+                    También participo en el diseño y desarrollo de soluciones
+                    digitales y proyectos tecnológicos de la Corporación.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             7. PAGASALUD
+        ================================================== -->
+
+        <div class="road-stop left">
+
+            <div class="checkpoint"></div>
+
+            <div class="experience-card">
+
+                <h3>
+                    Analista de Honorarios y Control Administrativo
+                </h3>
+
+                <h4>
+                    Pagasalud S.A.S.
+                </h4>
 
                 <span class="date">
                     Ago. 2025 – Actualidad
                 </span>
 
                 <p>
-                    Analicé bases de datos financieras y elaboré reportes para
-                    la toma de decisiones mediante Excel y Power BI.
+                    Analizo información financiera y administrativa,
+                    gestiono bases de datos, elaboro reportes y realizo
+                    seguimiento de indicadores, apoyando el control
+                    y la toma de decisiones mediante herramientas como
+                    Excel y Power BI.
                 </p>
+
             </div>
+
         </div>
 
-        <!-- Próximo reto -->
+
+        <!-- =================================================
+             8. NUEVA OPORTUNIDAD PROFESIONAL
+        ================================================== -->
+
         <div class="road-stop right final">
+
             <div class="checkpoint finish"></div>
 
             <div class="experience-card next-level">
 
-                <h3>🚀 Tu próximo reto</h3>
+                <h3>
+                    🚀 Nueva oportunidad profesional
+                </h3>
 
                 <p>
-                    ¿Será tu empresa?
+                    Mi siguiente etapa profesional está orientada a integrar
+                    mi experiencia en ingeniería, análisis de datos, tecnología
+                    y gestión para asumir nuevos retos y continuar creciendo
+                    profesionalmente.
                 </p>
 
                 <ul>
-                    <li>✔ Full Stack Java</li>
+
+                    <li>✔ Analítica de Datos</li>
+
                     <li>✔ Power BI</li>
+
                     <li>✔ SQL</li>
-                    <li>✔ IA Generativa</li>
+
+                    <li>✔ Desarrollo Full Stack</li>
+
+                    <li>✔ Inteligencia Artificial</li>
+
                     <li>✔ Gestión de Proyectos</li>
+
                 </ul>
 
             </div>
 
         </div>
 
+
     </div>
 
 </section>
 
-        <!-- CONTACTO -->
+        <!-- =================================================
+             CONTACTO
+        ================================================== -->
+
         <section id="contacto">
+
             <div class="section-title">
+
                 <span>Contacto</span>
+
                 <h2>Trabajemos juntos</h2>
+
             </div>
+
+
             <div class="contact-grid">
-                <a href="mailto:tatiana.marrugoj@gmail.com" class="contact-card">
+
+
+                <a href="mailto:tatiana.marrugoj@gmail.com"
+                    class="contact-card">
+
                     <i class="fa-solid fa-envelope"></i>
+
                     <h3>Email</h3>
-                    <p>tatiana.marrugoj@gmail.com</p>
+
+                    <p>
+                        tatiana.marrugoj@gmail.com
+                    </p>
+
                 </a>
-                <a href="https://www.linkedin.com/in/tatiana-marrugo-jim%C3%A9nez-5b24b2342" target="_blank" class="contact-card">
+
+
+                <a href="https://www.linkedin.com/in/tatiana-marrugo-jim%C3%A9nez-5b24b2342"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card">
+
                     <i class="fa-brands fa-linkedin"></i>
+
                     <h3>LinkedIn</h3>
+
                     <p>Ver Perfil</p>
+
                 </a>
-                <a href="https://github.com/Khadija1103" target="_blank" class="contact-card">
+
+
+                <a href="https://github.com/Khadija1103"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card">
+
                     <i class="fa-brands fa-github"></i>
+
                     <h3>GitHub</h3>
+
                     <p>Khadija1103</p>
+
                 </a>
+
             </div>
+
         </section>
 
-    </div> <!-- fin contenido-completo -->
+    </div>
 
-    <!-- ================ FOOTER ================ -->
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
     <footer>
+
         <div class="footer-content">
-            <h2>Tatiana Marrugo Jiménez</h2>
-            <p>Ingeniería • Desarrollo • Analítica • Power BI • IA</p>
+
+            <h2>
+                Tatiana Marrugo Jiménez
+            </h2>
+
+            <p>
+                Ingeniería • Datos • Desarrollo • Power BI • IA • Gestión
+            </p>
+
+
             <div class="footer-social">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+
+                <a href="https://www.linkedin.com/in/tatiana-marrugo-jim%C3%A9nez-5b24b2342"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                </a>
+
+
+                <a href="https://github.com/Khadija1103"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+
+                <a href="mailto:tatiana.marrugoj@gmail.com"
+                    aria-label="Correo electrónico">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
             </div>
+
+
             <hr />
-            <p class="copyright">© 2026 | Todos los derechos reservados.</p>
+
+
+            <p class="copyright">
+                © 2026 | Todos los derechos reservados.
+            </p>
+
         </div>
+
     </footer>
 
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
